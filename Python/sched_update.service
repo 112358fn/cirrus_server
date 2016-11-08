@@ -1,0 +1,10 @@
+[Unit]
+Description=Update of graphs sched every 5min
+
+[Service]
+Type=simple
+User=lucas
+ExecStart=/home/lucas/Python/sched_update.py
+
+[Install]
+WantedBy=multi-user.target
